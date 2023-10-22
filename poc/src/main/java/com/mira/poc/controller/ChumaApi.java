@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ChumaApi {
     @GetMapping("/get")
     public ResponseEntity<?> getApi() throws UnirestException {
-        HttpResponse<JsonNode> response = Unirest.get("http://65.1.91.91:31798/api/v1/employees")
+        HttpResponse<JsonNode> response = Unirest.get("https://randomuser.me/api/")
                 .asJson();
 
         int statusCode = response.getStatus();
